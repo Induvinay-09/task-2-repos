@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f9f9;
+  padding: 20px;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 10px;
+}
+
+form input, form textarea {
+  padding: 8px;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+form button {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: teal;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#formMessage {
+  margin-top: 15px;
+  color: green;
+}
+
+.todo-section input {
+  width: 70%;
+  padding: 8px;
+}
+
+.todo-section button {
+  padding: 8px 12px;
+  margin-left: 5px;
+  background: teal;
+  color: #fff;
+  border: none;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+#taskList li {
+  padding: 8px;
+  background: #e1f5f5;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#taskList li button {
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .grid-layout {
+    grid-template-columns: 1fr;
+  }
+}
